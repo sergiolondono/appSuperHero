@@ -10,7 +10,7 @@ export class StockComponent implements OnInit {
 
   stocks: any[];
   response: any;
-  
+
   constructor(private stockService: stockSimsService) { }
 
   ngOnInit() {
@@ -20,7 +20,7 @@ export class StockComponent implements OnInit {
 
   testMethod(){
     var stockRecord = {
-      id : "5bca369acd0f5f00139474cd",
+      _id : "5bca369acd0f5f00139474cd",
       numberInStock: 9
     }
     this.stockService.updateCustom(stockRecord)

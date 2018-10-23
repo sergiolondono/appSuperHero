@@ -37,7 +37,7 @@ export class DataService {
   }
 
   updateCustom (resource){
-    return this.http.put(this.url + '/' + resource.id, resource)
+    return this.http.put(this.url + '/' + resource._id, resource)
     .map(response => response.json());
   }
 
