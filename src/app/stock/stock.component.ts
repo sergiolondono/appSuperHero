@@ -14,8 +14,7 @@ export class StockComponent implements OnInit {
 
   ngOnInit() {
     this.stockService.getAll()
-    .subscribe(stocks => this.stocks = stocks)
-    ;
+    .subscribe(stocks => this.stocks = stocks);
   }
 
 }

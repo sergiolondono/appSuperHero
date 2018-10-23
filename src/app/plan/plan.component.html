@@ -1,0 +1,17 @@
+
+<table class="table table-bordered table-hover table-sm">
+  <tr class="thead-dark">
+    <th>Plan</th>
+    <th>Valor</th>
+    <th>Navegación</th>
+    <th>Descripción</th>
+    <th>Minutos</th>
+  </tr>
+  <tr *ngFor="let planPackage of planPackages">
+    <td>{{ planPackage.name }} </td>
+    <td>{{ planPackage.value }} </td>
+    <td>{{ planPackage.navigation }} </td>
+    <td>{{ planPackage.navigationDescription }} </td>
+    <td>{{ planPackage.minutes }} </td>
+  </tr>
+</table>
