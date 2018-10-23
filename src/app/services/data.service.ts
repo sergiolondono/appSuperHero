@@ -36,6 +36,11 @@ export class DataService {
     .catch(this.handleError);
   }
 
+  updateCustom (resource){
+    return this.http.put(this.url + '/' + resource.id, resource)
+    .map(response => response.json());
+  }
+
   delete(id){
     return this.http.delete(this.url + '/' + id)
     .map(response => response.json())
