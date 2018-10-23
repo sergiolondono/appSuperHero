@@ -20,9 +20,10 @@ export class StockComponent implements OnInit {
 
   testMethod(){
     var stockRecord = {
+      operator: "Flash",
       numberInStock: 9
     }
-    this.stockService.updateCustom(stockRecord)
+    this.stockService.updateCustom("5bca369acd0f5f00139474cd", stockRecord)
     .subscribe(response => this.response = response);
   }
 

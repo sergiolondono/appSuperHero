@@ -36,8 +36,8 @@ export class DataService {
     .catch(this.handleError);
   }
 
-  updateCustom (resource){
-    return this.http.put(this.url + '/' + resource._id, resource)
+  updateCustom (id, resource){
+    return this.http.put(this.url + '/' + id, resource)
     .map(response => response.json());
   }
 
