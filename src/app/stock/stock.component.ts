@@ -20,7 +20,6 @@ export class StockComponent implements OnInit {
 
   testMethod(){
     var stockRecord = {
-      _id : "5bca369acd0f5f00139474cd",
       numberInStock: 9
     }
     this.stockService.updateCustom(stockRecord)
